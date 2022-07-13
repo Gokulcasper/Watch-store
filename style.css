@@ -86,6 +86,14 @@ header #menu {
   display: none;
 }
 
+.fa-times {
+  transform: rotate(180deg);
+}
+
+header .navbar.nav-toggle {
+  top: 7.4rem;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
