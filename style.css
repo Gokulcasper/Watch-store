@@ -217,6 +217,49 @@ header #menu {
   padding: 2rem 1rem;
 }
 
+.about {
+  background: #222;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+  text-align: center;
+}
+
+.about .row .image img {
+  width: 85%;
+  border-radius: 0.5rem;
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2.5rem;
+}
+
+.about .row .content h3 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.about .row .content p {
+  font-size: 1.8rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.about .row .content p i {
+  padding-right: 0.5rem;
+  color: #637cbb;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
