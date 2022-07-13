@@ -1,0 +1,131 @@
+:root {
+  --gradient: linear-gradient(90deg, #4571e2, #485e95);
+}
+
+/* #637cbb, #485e95 */
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+::selection {
+  background: #fff;
+  color: #333;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #333;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--gradient);
+  z-index: 1000;
+  padding: 2rem 7%;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul a {
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+}
+
+header .navbar ul a::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0;
+  height: 0.2rem;
+  width: 0;
+  background: #fff;
+  transition: 0.2s linear;
+}
+
+header .navbar ul a.active::before,
+header .navbar ul a:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+header #menu {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  header #menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+  }
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem;
+  }
+
+  header .navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  header .navbar ul li a {
+    display: block;
+    background: var(--gradient);
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 2.5rem;
+    z-index: 0;
+  }
+
+  header .navbar ul li a::before {
+    height: 100%;
+    bottom: 0;
+    z-index: -1;
+    background: #333;
+  }
+}
