@@ -447,6 +447,42 @@ header #menu {
   padding-right: 1rem;
 }
 
+.footer {
+  background: #222;
+  text-align: center;
+}
+
+.footer .share {
+  padding: 2rem 0;
+}
+
+.footer .share h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.footer .share a {
+  font-size: 3rem;
+  color: #fff;
+  margin: 3rem 1.4rem;
+}
+
+.footer .share a:hover {
+  color: #637cbb;
+}
+
+.footer .credit {
+  padding: 2.5rem 1rem;
+  color: #fff;
+  background: #111;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer .credit a {
+  color: #637cbb;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
