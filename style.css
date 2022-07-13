@@ -359,6 +359,94 @@ header #menu {
   color: #fff;
 }
 
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 8.5rem;
+  padding-bottom: 4rem;
+}
+
+.contact form {
+  flex: 1 1 40rem;
+  background: #444;
+  padding: 6rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.contact form .box {
+  height: 5rem;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 0.1rem solid #ccc;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #fff;
+  text-transform: none;
+}
+
+.contact form textarea {
+  height: 15rem;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 0.1rem solid #ccc;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #fff;
+  text-transform: none;
+  resize: none;
+}
+
+.contact form .box::placeholder,
+.contact form textarea::placeholder {
+  text-transform: capitalize;
+}
+
+.contact form .box:focus,
+.contact form textarea:focus {
+  border-color: #637cbb;
+}
+
+.contact form .btn {
+  width: 100%;
+}
+
+.contact .content {
+  flex: 1 1 40rem;
+  padding: 4rem;
+}
+
+.contact .content h3 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.contact .content p {
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.contact .content .icons {
+  display: flex;
+  align-items: center;
+}
+
+.contact .content .icons p {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.contact .content .icons i {
+  font-size: 2rem;
+  color: #637cbb;
+  padding-right: 1rem;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
@@ -416,6 +504,10 @@ header #menu {
 
   .core .row .image {
     display: none;
+  }
+
+  .contact .content {
+    padding: 3rem 0;
   }
 }
 
